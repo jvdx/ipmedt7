@@ -1,0 +1,23 @@
+body {
+/*	margin-left: 800px/*;
+	margin-right: 500px*/*/
+}
+
+#spelerCanvas{
+	
+	position:absolute;
+	background-color:transparent;
+	
+
+}
+
+#bgCanvas{
+	background-color:transparent;
+}
+
+#geldCanvas{
+	position:absolute;
+	/*margin:-500px auto 0px;*/
+	background-color:transparent;
+}
+
