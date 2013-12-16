@@ -1,0 +1,18 @@
+body {
+/*	margin-left: 800px/*;
+	margin-right: 500px*/*/
+}
+
+#spelerCanvas{
+	
+	position:absolute;
+	background-color:transparent;
+	
+
+}
+
+#bgCanvas{
+	background-color:transparent;
+}
+
+
