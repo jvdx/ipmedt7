@@ -1,0 +1,57 @@
+<html>
+<title>
+jan ipmedt7
+</title>
+<head>
+	test head <p>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	<canvas id="canvas" style="border:5px solid #FF0000;" >	</canvas>
+	<script type="text/javascript">
+	var c=document.getElementById("canvas");
+	var ctx=c.getContext("2d");
+	var width = 800;
+	var height = 500;
+
+	var player= {
+		x : width /2,
+		y : height -15,
+		speed = 3;
+		width: 50,
+		height: 15
+	};
+
+c.width = width;
+c.height = height;
+
+(function() {
+    var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+    window.requestAnimationFrame = requestAnimationFrame;
+})();
+
+function update(){
+	// speler tekenen komt hier
+	ctx.fillStyle = "red";
+	ctx.fillRect(player.x, player.y, player.width, player.height);
+
+	//'refreshen'
+	requestAnimationFrame(update);
+}
+
+window.addEventListener("load", function(){
+	update();
+})
+
+
+	// var playerImg=new Image();
+	// playerImg.onload = function() {
+	// 	context.drawImage(playerImg,50,50);
+	// };
+
+	// playerImg.src="man.png";
+	</script>
+
+</body>
+</html>
